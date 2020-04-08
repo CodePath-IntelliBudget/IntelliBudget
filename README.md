@@ -73,7 +73,7 @@ spending money everyday, and then wondering where all the money went (I ask myse
    * Questions
 
 ## Wireframes
-<a herf="https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?node-id=1%3A4&scaling=scale-down">
+<a href="https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?node-id=1%3A4&scaling=scale-down">
 
 ### [BONUS] Digital Wireframes & Mockups
 
