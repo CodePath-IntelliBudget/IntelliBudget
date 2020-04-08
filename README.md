@@ -73,9 +73,7 @@ spending money everyday, and then wondering where all the money went (I ask myse
    * Questions
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-* We havent done this yet, will fill out by next week
-<img src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FUjhh2F4v4KLSHNBoxokE5V%2FCodePath-Project-WireFrame%3Fnode-id%3D0%253A1" width=600>
+<a herf="https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?node-id=1%3A4&scaling=scale-down">
 
 ### [BONUS] Digital Wireframes & Mockups
 
