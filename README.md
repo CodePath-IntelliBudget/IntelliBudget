@@ -103,12 +103,19 @@ https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?no
   query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
   if let error = error { 
       print(error.localizedDescription)
-   } else if let posts = posts {
+   } else if let purchases = purchases {
       print("Successfully retrieved \(purchases.count) purchases.")
-  // TODO: Do something with posts...
+  // TODO: Do something with purchases...
    }
   } 
   ```
- * 
+* Create a new purchase
+    * (Create/POST) Add a new purchase 
+    * (DELETE) Remove an existing purchase
+* Profile Screen
+    * (Read/GET) Weekly and monthly Reports
+    * (Read/GET) Categorized spending 
+    * (Read/GET) History of posed questions (answered and unanswered)
+    * (Update/PUT) Update user profile image
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
