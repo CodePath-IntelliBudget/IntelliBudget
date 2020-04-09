@@ -86,6 +86,7 @@ https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?no
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | objectID | String | username for what the user posts |
+| image | File | image that the user posts |
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
