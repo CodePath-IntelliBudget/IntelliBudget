@@ -96,16 +96,15 @@ https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?no
 * HomeFeedScreen
   * (Read/GET) List of all purchases the user has made 
   let query = PFQuery(className:"Post")
-query.whereKey("author", equalTo: currentUser)
-query.order(byDescending: "createdAt")
-query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
-   if let error = error { 
+  query.whereKey("author", equalTo: currentUser)
+  query.order(byDescending: "createdAt")
+  query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+  if let error = error { 
       print(error.localizedDescription)
    } else if let posts = posts {
       print("Successfully retrieved \(posts.count) posts.")
   // TODO: Do something with posts...
    }
-}
-  * (Read/GET) List of all purchases the user has made 
+  } 
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
