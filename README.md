@@ -87,6 +87,11 @@ https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?no
 | -------- | ---- | ----------- |
 | objectID | String | username for what the user posts |
 | image | File | image that the user posts |
+| price | Number | the amount the user spent on a purchase |
+| date | DateTime | the date when the purchase was made |
+| itemPurchased | String | the item the user purchased |
+| category | String | the specific category of the item purchased |
+| chartImage | File | this image shows the user's purchases through a chart (bar graph/ line graph) |
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
