@@ -95,6 +95,7 @@ https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?no
 - [Add list of network requests by screen ]
 * HomeFeedScreen
   * (Read/GET) List of all purchases the user has made
+    * including dates and categories
   ```
   let query = PFQuery(className:"Post")
   query.whereKey("author", equalTo: currentUser)
@@ -106,7 +107,8 @@ https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?no
       print("Successfully retrieved \(posts.count) posts.")
   // TODO: Do something with posts...
    }
-  } 
+ } 
   ```
+ * 
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
