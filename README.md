@@ -60,7 +60,6 @@ spending money everyday, and then wondering where all the money went (I ask myse
 **Tab Navigation** (Tab to Screen)
 
 * List of purchases
-* 
 * Account settings
 
 **Flow Navigation** (Screen to Screen)
@@ -94,5 +93,19 @@ https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?no
 | chartImage | File | this image shows the user's purchases through a chart (bar graph/ line graph) |
 ### Networking
 - [Add list of network requests by screen ]
+* HomeFeedScreen
+  * (Read/GET) List of all purchases the user has made 
+  let query = PFQuery(className:"Post")
+query.whereKey("author", equalTo: currentUser)
+query.order(byDescending: "createdAt")
+query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+   if let error = error { 
+      print(error.localizedDescription)
+   } else if let posts = posts {
+      print("Successfully retrieved \(posts.count) posts.")
+  // TODO: Do something with posts...
+   }
+}
+  * (Read/GET) List of all purchases the user has made 
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
