@@ -75,13 +75,12 @@ spending money everyday, and then wondering where all the money went (I ask myse
 https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?node-id=1%3A4&scaling=scale-down
 
 ### [BONUS] Digital Wireframes & Mockups
-|
+
 ### [BONUS] Interactive Prototype
 
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | username | String | username for what the user posts |
@@ -92,7 +91,6 @@ https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?no
 | category | String | the specific category of the item purchased |
 | chartImage | File | this image shows the user's purchases through a chart (bar graph/ line graph) |
 ### Networking
-- [Add list of network requests by screen ]
 * HomeFeedScreen
   * (Read/GET) List of all purchases the user has made
     * including dates and categories
