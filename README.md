@@ -84,7 +84,7 @@ https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?no
 [Add table of models]
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| objectID | String | username for what the user posts |
+| username | String | username for what the user posts |
 | image | File | image that the user posts |
 | price | Number | the amount the user spent on a purchase |
 | date | DateTime | the date when the purchase was made |
@@ -97,17 +97,17 @@ https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?no
   * (Read/GET) List of all purchases the user has made
     * including dates and categories
   ```
-  let query = PFQuery(className:"Post")
-  query.whereKey("author", equalTo: currentUser)
-  query.order(byDescending: "createdAt")
+  let query = PFQuery(className:"Purchases")
+  query.whereKey("username", equalTo: currentUser)
+  query.order(byDescending: "date")
   query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
   if let error = error { 
       print(error.localizedDescription)
    } else if let posts = posts {
-      print("Successfully retrieved \(posts.count) posts.")
+      print("Successfully retrieved \(purchases.count) purchases.")
   // TODO: Do something with posts...
    }
- } 
+  } 
   ```
  * 
 - [Create basic snippets for each Parse network request]
