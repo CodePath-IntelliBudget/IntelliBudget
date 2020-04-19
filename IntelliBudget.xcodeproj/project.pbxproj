@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304E31A7244CF47700C3A1C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E31A6244CF47700C3A1C5 /* LoginViewController.swift */; };
+		304E31A9244CF53500C3A1C5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E31A8244CF53500C3A1C5 /* HomePageViewController.swift */; };
 		3426A0787EF97154DA4FB09B /* Pods_IntelliBudget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B05181E1CC6EF327DA553A /* Pods_IntelliBudget.framework */; };
 		56B4A1B5A06F63B5E436F79C /* Pods_IntelliBudgetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE76043E56D453AE80C4373 /* Pods_IntelliBudgetTests.framework */; };
 		E2A713434CF7FEBC69EA12CE /* Pods_IntelliBudget_IntelliBudgetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C908AF1C45FAE725A1FC5F /* Pods_IntelliBudget_IntelliBudgetUITests.framework */; };
@@ -42,6 +44,8 @@
 		04A2C264CD2B098D40127764 /* Pods-IntelliBudget-IntelliBudgetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBudget-IntelliBudgetUITests.debug.xcconfig"; path = "Target Support Files/Pods-IntelliBudget-IntelliBudgetUITests/Pods-IntelliBudget-IntelliBudgetUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		21C908AF1C45FAE725A1FC5F /* Pods_IntelliBudget_IntelliBudgetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelliBudget_IntelliBudgetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B05181E1CC6EF327DA553A /* Pods_IntelliBudget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelliBudget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		304E31A6244CF47700C3A1C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		304E31A8244CF53500C3A1C5 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		751506E552BFDA53BC984CA5 /* Pods-IntelliBudget-IntelliBudgetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBudget-IntelliBudgetUITests.release.xcconfig"; path = "Target Support Files/Pods-IntelliBudget-IntelliBudgetUITests/Pods-IntelliBudget-IntelliBudgetUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8336D192D433ED309743AEDD /* Pods-IntelliBudget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBudget.debug.xcconfig"; path = "Target Support Files/Pods-IntelliBudget/Pods-IntelliBudget.debug.xcconfig"; sourceTree = "<group>"; };
 		9DB135BF4EBF6613303F730A /* Pods-IntelliBudget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBudget.release.xcconfig"; path = "Target Support Files/Pods-IntelliBudget/Pods-IntelliBudget.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +115,6 @@
 				0031BBA03EC8333BA0D362A7 /* Pods-IntelliBudgetTests.debug.xcconfig */,
 				BBFC731CE6ED99EF4C485300 /* Pods-IntelliBudgetTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -147,6 +150,8 @@
 				F1DDCD2F2448E6E8004E67AA /* Assets.xcassets */,
 				F1DDCD312448E6E8004E67AA /* LaunchScreen.storyboard */,
 				F1DDCD342448E6E8004E67AA /* Info.plist */,
+				304E31A6244CF47700C3A1C5 /* LoginViewController.swift */,
+				304E31A8244CF53500C3A1C5 /* HomePageViewController.swift */,
 			);
 			path = IntelliBudget;
 			sourceTree = "<group>";
@@ -408,8 +413,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304E31A7244CF47700C3A1C5 /* LoginViewController.swift in Sources */,
 				F1DDCD2B2448E6E4004E67AA /* ViewController.swift in Sources */,
 				F1DDCD272448E6E4004E67AA /* AppDelegate.swift in Sources */,
+				304E31A9244CF53500C3A1C5 /* HomePageViewController.swift in Sources */,
 				F1DDCD292448E6E4004E67AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
