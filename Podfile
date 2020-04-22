@@ -6,8 +6,9 @@ target 'IntelliBudget' do
   use_frameworks!
 
   # Pods for IntelliBudget
-  pod 'Parse'
-  pod 'AlamofireImage'
+  pod "Parse"
+  pod "AlamofireImage"
+  pod "MessageInputBar"
   target 'IntelliBudgetTests' do
     inherit! :search_paths
     # Pods for testing
