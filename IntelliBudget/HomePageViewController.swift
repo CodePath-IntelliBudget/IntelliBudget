@@ -19,18 +19,17 @@ class HomePageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func onLogout(_ sender: Any) {
+    @IBAction func logout(_ sender: Any) {
         PFUser.logOut()
-        
+        print(PFUser.current())
         let main = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
         
         let delegate = UIApplication.shared.delegate as! AppDelegate
         delegate.window?.rootViewController = loginViewController
         
-        print("Logging out")
-    }
+        print("Logging out")    }
+    
     /*
     // MARK: - Navigation
 
