@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "320f782b365944c7daa8a64ec2b7ea59_vector-single-analitic-icon-increasing-graph-line-arrow-go-_1300-1300.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

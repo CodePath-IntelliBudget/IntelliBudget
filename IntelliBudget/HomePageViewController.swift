@@ -9,13 +9,19 @@
 import UIKit
 import Parse
 
-class HomePageViewController: UIViewController {
+class HomePageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var purchases = [[String:Any]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        self.tableView.reloadData()
         // Do any additional setup after loading the view.
     }
     
@@ -28,7 +34,27 @@ class HomePageViewController: UIViewController {
         let delegate = UIApplication.shared.delegate as! AppDelegate
         delegate.window?.rootViewController = loginViewController
         
-        print("Logging out")    }
+        //UserDefaults.standard.set(false, forKey: "userLoggedIn")
+        print("Logging out")
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return purchases.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PurchaseCell") as! PurchaseCell
+        
+        let purchase = purchases[indexPath.row]
+        //let store = purchase[] as! String
+        let price = purchase
+        let date = purchase
+        let category = purchase
+        
+        //cell.textLabel!.text = store
+        
+        return cell
+    }
     
     /*
     // MARK: - Navigation
