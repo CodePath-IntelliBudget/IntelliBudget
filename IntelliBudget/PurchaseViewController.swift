@@ -78,6 +78,7 @@ class PurchaseViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         purchase["price"] = addPriceTextField.text!
         purchase["date"] = addDateTextField.text!
         purchase["category"] = addCategoryTextField.text!
+        purchase["user"] = PFUser.current()?.username
         
         purchase.saveInBackground { (success, error) in
             if success
