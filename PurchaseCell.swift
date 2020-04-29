@@ -14,10 +14,6 @@ class PurchaseCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     
-    @IBOutlet weak var purchaseTextField: UITextField!
-    @IBOutlet weak var priceTextField: UITextField!
-    @IBOutlet weak var dateTextField: UITextField!
-    @IBOutlet weak var categoryTextField: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()
