@@ -387,7 +387,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6wp-Nq-Zqs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="dollarsign.circle.fill" catalog="system" id="L91-Qv-o4T"/>
+                    <tabBarItem key="tabBarItem" title="Balance" selectedImage="dollarsign.circle.fill" catalog="system" id="L91-Qv-o4T"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="UYU-pF-7CG">
                         <barButtonItem key="rightBarButtonItem" title="+ Balance" id="R7Z-BO-RbZ">
@@ -410,7 +410,7 @@
         <scene sceneID="KOF-H9-8di">
             <objects>
                 <navigationController id="uMA-4M-9P0" userLabel="Balance Transition Label" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="dollarsign.circle" catalog="system" id="xa1-8o-DLZ"/>
+                    <tabBarItem key="tabBarItem" title="Balance" image="dollarsign.circle.fill" catalog="system" selectedImage="dollarsign.circle.fill" id="xa1-8o-DLZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TrI-qm-N5l">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -495,7 +495,6 @@
     </scenes>
     <resources>
         <image name="chart.bar.fill" catalog="system" width="128" height="89"/>
-        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
         <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
