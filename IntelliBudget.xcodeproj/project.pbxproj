@@ -15,6 +15,8 @@
 		3426A0787EF97154DA4FB09B /* Pods_IntelliBudget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B05181E1CC6EF327DA553A /* Pods_IntelliBudget.framework */; };
 		56B4A1B5A06F63B5E436F79C /* Pods_IntelliBudgetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE76043E56D453AE80C4373 /* Pods_IntelliBudgetTests.framework */; };
 		E2A713434CF7FEBC69EA12CE /* Pods_IntelliBudget_IntelliBudgetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C908AF1C45FAE725A1FC5F /* Pods_IntelliBudget_IntelliBudgetUITests.framework */; };
+		F14044BE245A543500FDFCF0 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14044BD245A543500FDFCF0 /* BalanceViewController.swift */; };
+		F14044C0245A5B2100FDFCF0 /* BalanceAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14044BF245A5B2100FDFCF0 /* BalanceAddViewController.swift */; };
 		F1692A5024512F2300B5639C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1692A4F24512F2300B5639C /* SceneDelegate.swift */; };
 		F1DDCD272448E6E4004E67AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DDCD262448E6E4004E67AA /* AppDelegate.swift */; };
 		F1DDCD2B2448E6E4004E67AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DDCD2A2448E6E4004E67AA /* ViewController.swift */; };
@@ -57,6 +59,8 @@
 		9DB135BF4EBF6613303F730A /* Pods-IntelliBudget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBudget.release.xcconfig"; path = "Target Support Files/Pods-IntelliBudget/Pods-IntelliBudget.release.xcconfig"; sourceTree = "<group>"; };
 		BBFC731CE6ED99EF4C485300 /* Pods-IntelliBudgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBudgetTests.release.xcconfig"; path = "Target Support Files/Pods-IntelliBudgetTests/Pods-IntelliBudgetTests.release.xcconfig"; sourceTree = "<group>"; };
 		EDE76043E56D453AE80C4373 /* Pods_IntelliBudgetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelliBudgetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14044BD245A543500FDFCF0 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		F14044BF245A5B2100FDFCF0 /* BalanceAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceAddViewController.swift; sourceTree = "<group>"; };
 		F1692A4F24512F2300B5639C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F1DDCD232448E6E4004E67AA /* IntelliBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelliBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1DDCD262448E6E4004E67AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				304E31A8244CF53500C3A1C5 /* HomePageViewController.swift */,
 				308EEBE92454C28000AB127F /* PurchaseViewController.swift */,
 				308EEBEB2454E99D00AB127F /* TabViewController.swift */,
+				F14044BD245A543500FDFCF0 /* BalanceViewController.swift */,
+				F14044BF245A5B2100FDFCF0 /* BalanceAddViewController.swift */,
 			);
 			path = IntelliBudget;
 			sourceTree = "<group>";
@@ -422,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14044BE245A543500FDFCF0 /* BalanceViewController.swift in Sources */,
 				308EEBEC2454E99D00AB127F /* TabViewController.swift in Sources */,
 				F1692A5024512F2300B5639C /* SceneDelegate.swift in Sources */,
 				304E31A7244CF47700C3A1C5 /* LoginViewController.swift in Sources */,
@@ -430,6 +437,7 @@
 				F1DDCD2B2448E6E4004E67AA /* ViewController.swift in Sources */,
 				F1DDCD272448E6E4004E67AA /* AppDelegate.swift in Sources */,
 				304E31A9244CF53500C3A1C5 /* HomePageViewController.swift in Sources */,
+				F14044C0245A5B2100FDFCF0 /* BalanceAddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

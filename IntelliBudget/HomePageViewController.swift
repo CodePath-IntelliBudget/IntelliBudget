@@ -27,10 +27,10 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
         
         self.tableView.reloadData()
         // Do any additional setup after loading the view.
+ 
     }
     
-   
-    
+
     
     
     @IBAction func logout(_ sender: Any) {
@@ -63,6 +63,7 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
             self.tableView.reloadData()
             }
         }
+        
            
     }
     

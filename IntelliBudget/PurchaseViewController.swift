@@ -35,9 +35,15 @@ class PurchaseViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         categoryPicker.delegate = self
         categoryPicker.dataSource = self
         addCategoryTextField.inputView = categoryPicker
+       // Do any additional setup after loading the view.
+        
+                
 
-        // Do any additional setup after loading the view.
+
+        
+
     }
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int
     {
@@ -90,6 +96,7 @@ class PurchaseViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 print("error")
             }
         }
+
         
         dismiss(animated: true, completion: nil)
     }
