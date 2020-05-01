@@ -36,12 +36,6 @@ class PurchaseViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         categoryPicker.dataSource = self
         addCategoryTextField.inputView = categoryPicker
        // Do any additional setup after loading the view.
-        
-                
-
-
-        
-
     }
     
     

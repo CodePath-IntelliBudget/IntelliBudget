@@ -12,6 +12,7 @@
 		308EEBE62454B44000AB127F /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308EEBE52454B44000AB127F /* PurchaseCell.swift */; };
 		308EEBEA2454C28000AB127F /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308EEBE92454C28000AB127F /* PurchaseViewController.swift */; };
 		308EEBEC2454E99D00AB127F /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308EEBEB2454E99D00AB127F /* TabViewController.swift */; };
+		308EEBEE245C9E7C00AB127F /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308EEBED245C9E7C00AB127F /* ChartViewController.swift */; };
 		3426A0787EF97154DA4FB09B /* Pods_IntelliBudget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B05181E1CC6EF327DA553A /* Pods_IntelliBudget.framework */; };
 		56B4A1B5A06F63B5E436F79C /* Pods_IntelliBudgetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE76043E56D453AE80C4373 /* Pods_IntelliBudgetTests.framework */; };
 		E2A713434CF7FEBC69EA12CE /* Pods_IntelliBudget_IntelliBudgetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C908AF1C45FAE725A1FC5F /* Pods_IntelliBudget_IntelliBudgetUITests.framework */; };
@@ -54,6 +55,7 @@
 		308EEBE52454B44000AB127F /* PurchaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PurchaseCell.swift; path = ../PurchaseCell.swift; sourceTree = "<group>"; };
 		308EEBE92454C28000AB127F /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		308EEBEB2454E99D00AB127F /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		308EEBED245C9E7C00AB127F /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		751506E552BFDA53BC984CA5 /* Pods-IntelliBudget-IntelliBudgetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBudget-IntelliBudgetUITests.release.xcconfig"; path = "Target Support Files/Pods-IntelliBudget-IntelliBudgetUITests/Pods-IntelliBudget-IntelliBudgetUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8336D192D433ED309743AEDD /* Pods-IntelliBudget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBudget.debug.xcconfig"; path = "Target Support Files/Pods-IntelliBudget/Pods-IntelliBudget.debug.xcconfig"; sourceTree = "<group>"; };
 		9DB135BF4EBF6613303F730A /* Pods-IntelliBudget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliBudget.release.xcconfig"; path = "Target Support Files/Pods-IntelliBudget/Pods-IntelliBudget.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				308EEBE52454B44000AB127F /* PurchaseCell.swift */,
 				F1DDCD2A2448E6E4004E67AA /* ViewController.swift */,
 				F1DDCD2C2448E6E4004E67AA /* Main.storyboard */,
+				308EEBED245C9E7C00AB127F /* ChartViewController.swift */,
 				F1DDCD2F2448E6E8004E67AA /* Assets.xcassets */,
 				F1DDCD312448E6E8004E67AA /* LaunchScreen.storyboard */,
 				F1DDCD342448E6E8004E67AA /* Info.plist */,
@@ -438,6 +441,7 @@
 				F1DDCD272448E6E4004E67AA /* AppDelegate.swift in Sources */,
 				304E31A9244CF53500C3A1C5 /* HomePageViewController.swift in Sources */,
 				F14044C0245A5B2100FDFCF0 /* BalanceAddViewController.swift in Sources */,
+				308EEBEE245C9E7C00AB127F /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

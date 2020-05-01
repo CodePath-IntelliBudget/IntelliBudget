@@ -9,6 +9,7 @@ target 'IntelliBudget' do
   pod "Parse"
   pod "AlamofireImage"
   pod "MessageInputBar"
+  pod "Charts"
   target 'IntelliBudgetTests' do
     inherit! :search_paths
     # Pods for testing
