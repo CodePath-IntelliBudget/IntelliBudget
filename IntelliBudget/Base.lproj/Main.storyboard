@@ -333,8 +333,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="f6a-bD-VOg" kind="relationship" relationship="viewControllers" id="kSR-yT-NSD"/>
                         <segue destination="EzO-G0-yfo" kind="relationship" relationship="viewControllers" id="lto-6w-i3T"/>
+                        <segue destination="f6a-bD-VOg" kind="relationship" relationship="viewControllers" id="kSR-yT-NSD"/>
                         <segue destination="uMA-4M-9P0" kind="relationship" relationship="viewControllers" id="0RH-06-Uxw"/>
                     </connections>
                 </tabBarController>
