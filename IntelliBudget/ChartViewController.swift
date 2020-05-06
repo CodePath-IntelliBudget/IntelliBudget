@@ -89,7 +89,7 @@ class ChartViewController: UIViewController, ChartViewDelegate {
         pieChart.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.width)
         pieChart.center = view.center
         view.addSubview(pieChart)
-               
+        
         var entries = [ChartDataEntry]()
                
         for x in 0..<10 {

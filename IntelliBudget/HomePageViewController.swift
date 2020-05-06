@@ -48,7 +48,7 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
     
     // query for the purchases in the database
     override func viewDidAppear(_ animated: Bool) {
-           super.viewDidAppear(animated)
+        super.viewDidAppear(animated)
            
         // get current user
         let user = PFUser.current()?.username
@@ -83,7 +83,6 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let purchase = purchases[indexPath.section]
-        
         if purchases.count > 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PurchaseCell") as! PurchaseCell
             
