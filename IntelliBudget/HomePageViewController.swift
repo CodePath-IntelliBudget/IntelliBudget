@@ -16,7 +16,6 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
 
 
     @IBOutlet weak var tableView: UITableView!
-    var Purchases: AppDelegate = AppDelegate()
     var purchases = [PFObject]()
 
 
@@ -56,13 +55,13 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
         let query = PFQuery(className:"Purchase")
         query.includeKeys(["store","price","category","date","user"])
         query.whereKey("user", equalTo:user)
-        
         query.findObjectsInBackground { (purchases, error) in
         if purchases != nil {
             self.purchases = purchases!
             self.tableView.reloadData()
             }
         }
+
         
 
     }
@@ -82,6 +81,7 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let purchase = purchases[indexPath.section]
         
         if purchases.count > 0 {

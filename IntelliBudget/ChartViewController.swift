@@ -16,34 +16,15 @@ class ChartViewController: UIViewController, ChartViewDelegate {
     //var lineChart = LineChartView()
     var pieChart = PieChartView()
     var purchases = [PFObject]()
+    //create a dictionary
+    //    var categories = ["Groceries" : 0.0, "Games": 0.0, "Movies and TV": 0.0, "Food": 0.0, "Electronics": 0.0, "Bills": 0.0, "Around the house": 0.0, "Accessories": 0.0, "Gifts": 0.0, "Other": 0.0]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //barChart.delegate = self
         //lineChart.delegate = self
         pieChart.delegate = self
-        
-        //create a dictionary
-        var categories = ["Groceries" : 0, "Games": 0, "Movies and TV": 0, "Food": 0, "Electronics": 0, "Bills": 0, "Around the house": 0, "Accessories": 0, "Gifts": 0, "Other": 0]
-        
-        // get current user
-        let user = PFUser.current()?.username
-        
-        let query = PFQuery(className:"Purchase")
-        query.includeKeys(["store","price","category","date","user"])
-        query.whereKey("user", equalTo:user)
-        
-        query.findObjectsInBackground { (purchases, error) in
-        if purchases != nil {
-            for purchase in purchases! {
-                print(purchase)
-            }
-            self.purchases = purchases!
-            }
-        }
-        
-        
-        
+
         // Do any additional setup after loading the view.
     }
     
@@ -51,8 +32,7 @@ class ChartViewController: UIViewController, ChartViewDelegate {
     override func viewDidAppear(_ animated: Bool) {
            super.viewDidAppear(animated)
            
-
-
+       
            
     }
     
@@ -60,20 +40,38 @@ class ChartViewController: UIViewController, ChartViewDelegate {
        pieChart.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.width)
        pieChart.center = view.center
        view.addSubview(pieChart)
-                
+            
+        var entries = [ChartDataEntry]()
+
+        // get current user
+        let user = PFUser.current()?.username
+               
+        let query = PFQuery(className:"Purchase")
+        query.includeKeys(["store","price","category","date","user"])
+        query.whereKey("user", equalTo:user)
+        query.findObjectsInBackground { (purchases, error) in
+            if purchases != nil {
+                for purchase in purchases! {
+                    let category = purchase["category"] as! String
+                    let price = purchase["price"] as! String
+                    let temp = Double(price)!
+                    entries.append(BarChartDataEntry(x:temp, y: temp	))
+ 
+                }
+
+                          
+                   let set = PieChartDataSet(entries: entries)
+                   set.colors = ChartColorTemplates.joyful()
+                          
+                   let data = PieChartData(dataSet: set)
+                   self.pieChart.data = data
+                }
+            }
+                   
+        
 
 
-       var entries = [ChartDataEntry]()
-    
-       for x in 0..<10 {
-           entries.append(BarChartDataEntry(x:Double(x), y:Double(x)))
-       }
-              
-       let set = PieChartDataSet(entries: entries)
-       set.colors = ChartColorTemplates.joyful()
-              
-       let data = PieChartData(dataSet: set)
-       pieChart.data = data
+
     }
     /*
     override func viewDidLayoutSubviews() {
