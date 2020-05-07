@@ -46,15 +46,9 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     // query for the purchases in the database
-<<<<<<< HEAD
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-           
-=======
-    override func viewWillAppear(_ animated: Bool) {
-           super.viewDidAppear(animated)
-
->>>>>>> 9b6e71a6c107bc8161ccb4b2ecc081d16c5366f5
         // get current user
         let user = PFUser.current()?.username
 
