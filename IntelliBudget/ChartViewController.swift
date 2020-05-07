@@ -17,7 +17,7 @@ class ChartViewController: UIViewController, ChartViewDelegate {
     var pieChart = PieChartView()
     var purchases = [PFObject]()
     //create a dictionary
-    //    var categories = ["Groceries" : 0.0, "Games": 0.0, "Movies and TV": 0.0, "Food": 0.0, "Electronics": 0.0, "Bills": 0.0, "Around the house": 0.0, "Accessories": 0.0, "Gifts": 0.0, "Other": 0.0]
+    var categories = ["Groceries" : 0.0, "Games": 0.0, "Movies and TV": 0.0, "Food": 0.0, "Electronics": 0.0, "Bills": 0.0, "Around the house": 0.0, "Accessories": 0.0, "Gifts": 0.0, "Other": 0.0]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,20 +55,33 @@ class ChartViewController: UIViewController, ChartViewDelegate {
                     let category = purchase["category"] as! String
                     let price = purchase["price"] as! String
                     let temp = Double(price)!
-                    entries.append( PieChartDataEntry(value: temp, label: category))
+                    let categoryCost = self.categories[category]! + temp
+                    self.categories.updateValue(categoryCost, forKey: category)
+                    
  
                 }
-                    
+                
+                for (key,value) in self.categories {
+                    if(value > 0.0 ) {
+                        print(key , " " ,value)
+                        entries.append( PieChartDataEntry(value: value, label: key))
+                    }
+                }
+                print(self.categories)
                    
                           
                 let set = PieChartDataSet(entries: entries, label: " ")
-                set.colors = ChartColorTemplates.joyful()
+                var  colors: [UIColor] = [UIColor.green, UIColor.blue, UIColor.red, UIColor.yellow, UIColor.orange, UIColor.purple, UIColor.systemPink, UIColor.gray, UIColor.cyan, UIColor.systemTeal]
+    
+                set.colors = colors
                    
                 let data = PieChartData(dataSet: set)
                    
                 self.pieChart.data = data
                 self.pieChart.data?.setValueTextColor(NSUIColor.black)
                 self.pieChart.drawEntryLabelsEnabled = false
+                self.pieChart.legend.orientation = .vertical
+                self.pieChart.notifyDataSetChanged()
                 }
             }
                    
