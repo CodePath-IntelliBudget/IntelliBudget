@@ -55,16 +55,20 @@ class ChartViewController: UIViewController, ChartViewDelegate {
                     let category = purchase["category"] as! String
                     let price = purchase["price"] as! String
                     let temp = Double(price)!
-                    entries.append(BarChartDataEntry(x:temp, y: temp	))
+                    entries.append( PieChartDataEntry(value: temp, label: category))
  
                 }
-
+                    
+                   
                           
-                   let set = PieChartDataSet(entries: entries)
-                   set.colors = ChartColorTemplates.joyful()
-                          
-                   let data = PieChartData(dataSet: set)
-                   self.pieChart.data = data
+                let set = PieChartDataSet(entries: entries, label: " ")
+                set.colors = ChartColorTemplates.joyful()
+                   
+                let data = PieChartData(dataSet: set)
+                   
+                self.pieChart.data = data
+                self.pieChart.data?.setValueTextColor(NSUIColor.black)
+                self.pieChart.drawEntryLabelsEnabled = false
                 }
             }
                    
