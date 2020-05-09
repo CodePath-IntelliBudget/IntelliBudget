@@ -42,11 +42,17 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onSignUp(_ sender: Any) {
+        let now = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "LLLL"
+        let month = dateFormatter.string(from: now)
+        
         let user = PFUser()
         user.username = usernameField.text
         user.password = passwordField.text
         user["money"] = 0
-        
+        user["month"] = month
+        user["monthBalance"] = 0
         user.signUpInBackground { (success, error) in
             if success {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)

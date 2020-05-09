@@ -13,24 +13,27 @@ class BalanceViewController: UIViewController {
 
     @IBOutlet weak var balance: UILabel!
     
+    @IBOutlet weak var monthBalance: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let user = PFUser.current()
 
-        balance.text = "\(user?["money"] as! Float)"
-        // Do any additional setup after loading the view.
+        balance.text =  String(format: "%.2f", user?["money"] as! Float)
+        
+
+                // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         let user = PFUser.current()
-
-        balance.text = "\(user?["money"] as! Float)"
-        // Do any additional setup after loading the view.
-    }
-    
+        balance.text =  String(format: "%.2f", user?["money"] as! Float)
+        
+        
+        let monthbalance = (user?["monthBalance"] as! NSNumber).floatValue
+        monthBalance.text = String(format: "%.2f", monthbalance)
     
     
     /*
@@ -42,5 +45,5 @@ class BalanceViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    }
 }

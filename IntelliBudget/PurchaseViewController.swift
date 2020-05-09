@@ -72,9 +72,41 @@ class PurchaseViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     @IBAction func addPurchase(_ sender: Any)
     {
+        let user = PFUser.current()
+        let balance = user?["money"] as! Float
+        let price = Float(addPriceTextField.text!)!
+        let userMonth = user?["month"] as! String
+        let usermonthBalance = (user?["monthBalance"] as! NSNumber).floatValue
+        //assign new value
+        user?["money"] = balance - price
+        
+        
+        let now = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "LLLL"
+        let month = dateFormatter.string(from: now)
+        
+        if (month == userMonth) {
+            user?["monthBalance"] = usermonthBalance + price
+        }
+        else {
+            user?["month"] = month
+            user?["monthBalance"] = price
+        }
+        
+        user?.saveInBackground { (success, error) in
+            if success
+            {
+                print("saved")
+            }
+            else
+            {
+                print("error")
+            }
+        }
         
         let purchase = PFObject(className: "Purchase")
-        purchase["store"] = addStoreTextField.text!
+        purchase["store"] = addStoreTextField.text!.capitalized
         purchase["price"] = addPriceTextField.text!
         purchase["date"] = addDateTextField.text!
         purchase["category"] = addCategoryTextField.text!
