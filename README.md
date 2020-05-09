@@ -119,4 +119,4 @@ https://www.figma.com/proto/Ujhh2F4v4KLSHNBoxokE5V/CodePath-Project-WireFrame?no
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
 ## App Walkthrough Gif
-<img src='http://g.recordit.co/YR2sEk0Cs1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/tBkBZridPu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
