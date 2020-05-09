@@ -20,7 +20,7 @@ class PurchaseViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     let categories = ["Groceries", "Games", "Movies and TV", "Food", "Electronics", "Bills", "Around the house", "Accessories", "Gifts", "Other"]
     var categoryPicker = UIPickerView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -72,8 +72,8 @@ class PurchaseViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     @IBAction func addPurchase(_ sender: Any)
     {
-        let purchase = PFObject(className: "Purchase")
         
+        let purchase = PFObject(className: "Purchase")
         purchase["store"] = addStoreTextField.text!
         purchase["price"] = addPriceTextField.text!
         purchase["date"] = addDateTextField.text!

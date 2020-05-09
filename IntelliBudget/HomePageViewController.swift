@@ -55,6 +55,7 @@ class HomePageViewController: UIViewController, UITableViewDataSource, UITableVi
         let query = PFQuery(className:"Purchase")
         query.includeKeys(["store","price","category","date","user"])
         query.whereKey("user", equalTo:user)
+        query.order(byDescending: "createdAt")
         query.findObjectsInBackground { (purchases, error) in
         if purchases != nil {
             self.purchases = purchases!
